@@ -28,27 +28,7 @@ In your repo: **Settings → Secrets and variables → Actions → New repositor
 
 ---
 
-## 2) Run locally (optional)
-```bash
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-python app.py
-```
-
-Open: http://localhost:8080
-
----
-
-## 3) Build & run with Docker (optional)
-```bash
-docker build -t flask-cloudrun .
-docker run -p 8080:8080 flask-cloudrun
-```
-
----
-
-## 4) Deploy
+## 2) Deploy
 Just push to `main`:
 ```bash
 git add .
@@ -59,7 +39,3 @@ git push origin main
 GitHub Actions will deploy automatically.
 
 ---
-
-## Notes on Codespaces
-- **You can use Codespaces** to develop/test and commit/push.
-- **You do NOT need Codespaces to deploy**: deployment happens on **GitHub Actions** after you push.
